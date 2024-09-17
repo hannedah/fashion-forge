@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Forge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <div id="animation-overlay">
+      <img
+        src="assets/img/intro-image.png"
+        alt="Image"
+        class="full-viewport-image"
+      />
+      <div class="overlay-text" id="dynamicText">
+        <p>Transform</p>
+        <p>Fashion,</p>
+        <p>Craft</p>
+        <p>Dreams</p>
+      </div>
+    </div>
+    <script src="/src/variable-font-cursor.ts"></script>
+    <script src="/src/animation-end.ts"></script>
+
+    <div id="content">
+      <div class="grid">
+        <!-- images -->
+        <div class="grid-item prompt-overlay item1">
+          <img src="assets/img/grid/image1.png" alt="Image 1" />
+        </div>
+        <div class="grid-item prompt-overlay item2">
+          <img src="assets/img/grid/image2.png" alt="Image 2" />
+        </div>
+        <div class="grid-item prompt-overlay item3">
+          <img src="assets/img/grid/image3.png" alt="Image 3" />
+        </div>
+        <div class="grid-item prompt-overlay item4">
+          <img src="assets/img/grid/image4.png" alt="Image 4" />
+        </div>
+        <div class="grid-item prompt-overlay item5">
+          <img src="assets/img/grid/image5.png" alt="Image 5" />
+        </div>
+        <div class="grid-item prompt-overlay item6">
+          <img
+            src="assets/img/grid/image6.png"
+            alt="Image 6"
+            class="align-top"
+          />
+        </div>
+        <div class="grid-item prompt-overlay item7">
+          <img src="assets/img/grid/image7.png" alt="Image 7" />
+        </div>
+        <div class="grid-item prompt-overlay item8">
+          <img
+            src="assets/img/grid/image8.png"
+            alt="Image 8"
+            class="align-top"
+          />
+        </div>
+        <div class="grid-item prompt-overlay item9">
+          <img src="assets/img/grid/image9.png" alt="Image 9" />
+        </div>
+        <div class="grid-item prompt-overlay item10">
+          <img src="assets/img/grid/image10.png" alt="Image 10" />
+        </div>
+        <div class="grid-item prompt-overlay item11">
+          <img
+            src="assets/img/grid/image11.png"
+            alt="Image 11"
+            class="align-top"
+          />
+        </div>
+        <div class="grid-item prompt-overlay item12">
+          <img
+            src="assets/img/grid/image12.png"
+            alt="Image 12"
+            class="align-bottom"
+          />
+        </div>
+        <div class="grid-item prompt-overlay item13">
+          <img src="assets/img/grid/image13.png" alt="Image 13" />
+        </div>
+        <div class="grid-item prompt-overlay item14">
+          <img src="assets/img/grid/image14.png" alt="Image 14" />
+        </div>
+        <div class="grid-item prompt-overlay item15">
+          <img src="assets/img/grid/image15.png" alt="Image 15" />
+        </div>
+        <div class="grid-item prompt-overlay item16">
+          <img src="assets/img/grid/image16.png" alt="Image 16" />
+        </div>
+        <div class="grid-item prompt-overlay item17">
+          <img src="assets/img/grid/image17.png" alt="Image 17" />
+        </div>
+        <div class="grid-item prompt-overlay item18">
+          <img src="assets/img/grid/image18.png" alt="Image 18" />
+        </div>
+        <div class="grid-item prompt-overlay item19">
+          <img src="assets/img/grid/image19.png" alt="Image 19" />
+        </div>
+        <div class="grid-item prompt-overlay item20">
+          <img src="assets/img/grid/image20.png" alt="Image 20" />
+        </div>
+        <div class="grid-item prompt-overlay item21">
+          <img src="assets/img/grid/image21.png" alt="Image 21" />
+        </div>
+        <div class="grid-item prompt-overlay item22">
+          <img
+            src="assets/img/grid/image22.png"
+            alt="Image 22"
+            class="align-top"
+          />
+        </div>
+        <div class="grid-item prompt-overlay item23">
+          <img
+            src="assets/img/grid/image23.png"
+            alt="Image 23"
+            class="align-top"
+          />
+        </div>
+        <div class="grid-item prompt-overlay item24">
+          <img src="assets/img/grid/image24.png" alt="Image 24" />
+        </div>
+        <div class="grid-item prompt-overlay item25">
+          <img src="assets/img/grid/image25.png" alt="Image 25" />
+        </div>
+        <div class="grid-item prompt-overlay item26">
+          <img src="assets/img/grid/image26.png" alt="Image 26" />
+        </div>
+        <div class="grid-item prompt-overlay item27">
+          <img
+            src="assets/img/grid/image27.png"
+            alt="Image 27"
+            class="align-top"
+          />
+        </div>
+
+        <!-- rectangles -->
+        <div class="grid-item rectangle rect1"></div>
+        <div class="grid-item rectangle rect2"></div>
+        <div class="grid-item rectangle rect3"></div>
+        <div class="grid-item rectangle rect4"></div>
+        <div class="grid-item rectangle rect5"></div>
+        <div class="grid-item rectangle rect6"></div>
+        <!-- <div class="grid-item rectangle rect7"></div> -->
+        <!-- <div class="grid-item rectangle rect8"></div> -->
+        <div class="grid-item rectangle rect9"></div>
+        <!-- <div class="grid-item rectangle rect10"></div> -->
+
+        <!-- text items -->
+        <div class="grid-item txt1 grid-text-bold">
+          At the heart of transformation stands
+          <span class="MDIO-ultra-italic">the&nbsp;Fashion&nbsp;Forge</span>
+        </div>
+        <div class="grid-item txt2 grid-text">
+          <span class="MDIO-bold-italic">→ a machine</span> humming with purpose
+          and renewal
+        </div>
+        <div class="grid-item txt3 grid-text-rotate">
+          It takes our worn, our tired fabrics
+        </div>
+        <div class="grid-item txt4 grid-text">
+          <span class="MDIO-bold-italic">and,</span> with a touch of alchemy,
+          turns them into something both familiar and utterly new.
+        </div>
+        <div class="grid-item txt5 grid-text">
+          The process begins with a scan o<span class="fraktur">f</span>
+          <em>every worn corner and faded hue,</em> understanding the li<span
+            class="fraktur"
+            >f</span
+          >e each garment has lived.
+        </div>
+        <div class="grid-item txt6 grid-text-bold wavy-text">
+          They carry the weight of moments lived—<span>J</span><span>O</span
+          ><span>Y</span><span>S</span>, sorrows, and everything in between.
+        </div>
+        <div class="grid-item txt7 grid-text-bold">
+          You stand before it, hands filled with memories in cloth form, and
+          <span class="MDIO-ultra-italic">you make a wish</span>
+        </div>
+        <div class="grid-item txt8 grid-text-bold">
+          You speak your vision——a jacket that carries the strength of old jeans
+        </div>
+        <div class="grid-item txt9 grid-text wavy-text">
+          <span>A</span>
+          <span> </span>
+          <span>d</span><span>r</span><span>e</span><span>s</span><span>s</span>
+          <span> </span>
+          <span>t</span><span>h</span><span>a</span><span>t</span>
+          <span> </span>
+          <span>d</span><span>a</span><span>n</span><span>c</span><span>e</span
+          ><span>s</span>
+          <span> </span>
+          <span>w</span><span>i</span><span>t</span><span>h</span>
+          <span> </span>
+          <span>t</span><span>h</span><span>e</span>
+          <span> </span>
+          <span>s</span><span>p</span><span>i</span><span>r</span><span>i</span
+          ><span>t</span>
+          <span> </span>
+          <span>o</span><span>f</span>
+          <span> </span>
+          <span>a</span>
+          <span>t</span><span>h</span><span>o</span><span>u</span><span>s</span
+          ><span>a</span><span>n</span><span>d</span>
+          <span> </span>
+          <span>s</span><span>u</span><span>m</span><span>m</span><span>e</span
+          ><span>r</span>
+          <span> </span>
+          <span>n</span><span>i</span><span>g</span><span>h</span><span>t</span
+          ><span>s</span><span>.</span>
+        </div>
+        <div class="grid-item txt10 grid-text">
+          The <span class="fraktur">F</span>ashion&nbsp;<span class="fraktur"
+            >F</span
+          >orge listens, processes, <em>then begins its work.</em>
+        </div>
+        <div class="grid-item txt11 grid-text-rotate">
+          It unravels the past
+          <span class="MDIO-thin">to weave the future</span>
+        </div>
+        <div class="grid-item txt12 grid-text skewX">
+          Fabrics are deconstructed, fibers separated and reconstituted.
+        </div>
+        <div class="grid-item txt13 grid-text-bold">
+          Ensuring that the history <u>woven</u> into each
+          <span class="white">thread</span> is respected and understood.
+        </div>
+        <div class="grid-item txt14 grid-text-big-bold">
+          But more than that, <em>it knows you</em>
+        </div>
+        <div class="grid-item txt15 grid-text-rotate">
+          Crafting clothing that feels like a second skin
+        </div>
+        <div class="grid-item txt16 grid-text">
+          Ensuring each creation is not only new but made to fit you
+          <span class="MDIO-ultra-italic">perfectly.</span>
+        </div>
+        <div class="grid-item txt17 grid-text">
+          It takes your <span class="MDIO-ultra">measurements</span>, intimate
+          and precise.
+        </div>
+        <div class="grid-item txt18 grid-text">
+          It learns the language o<span class="fraktur">f</span> your body,
+          <span class="MDLorien-book-italic">every curve and line,</span> the
+          nuances o<span class="fraktur">f</span> your shape.
+        </div>
+        <div class="grid-item txt19 grid-text">
+          This is not merely the work of a
+          <span class="MonaSans-Light">machine</span>, but the
+          <span class="fraktur">artistry</span> of a true couturier.
+        </div>
+        <div class="grid-item txt20 grid-text">
+          You<span class="MDIO-ultra">’</span>re not just wearing clothes<span
+            class="MDIO-ultra"
+            >;</span
+          >
+          you<span class="MDIO-ultra">’</span>re wearing stories<span
+            class="MDIO-ultra"
+            >,</span
+          >
+          histories <u>woven</u> into every thread<span class="MDIO-ultra"
+            >.</span
+          >
+        </div>
+        <div class="grid-item txt21 grid-text-big-bold">
+          nothing is truly lost
+        </div>
+        <div class="grid-item txt22 grid-text">
+          It’s a reminder that, that everything can be reborn in a new form.
+        </div>
+        <div class="grid-item txt23 grid-text rotate">
+          In its quiet, methodical way, it recycles the essence of what was into
+          what will be.
+        </div>
+        <div class="grid-item txt24 grid-text green">
+          The result is not just clothing but a story rewritten—A poem stitched
+          in fabric.
+        </div>
+        <div class="grid-item txt25 grid-text">
+          Each piece is sustainable, yes, but also a testament to
+          <span class="makerWhite">individuality.</span>
+        </div>
+        <div class="grid-item txt26 grid-text">
+          Every seam, every fold, is a line in the narrative of who you are and
+          where you’ve been.
+        </div>
+        <div class="grid-item txt27 grid-text three-d-text">
+          What emerges is a statement: of style, of sustainability, of
+          connection to the earth and to oneself.
+        </div>
+        <div class="grid-item txt28 grid-text">
+          Fitting you<span class="makerBlack">r</span> form like a whispered
+          secret.
+        </div>
+        <div class="grid-item txt29 grid-text-rotate">
+          The new garment is ready, Forged with care.
+        </div>
+        <div class="grid-item txt30 grid-text">
+          <span class="fraktur">When you wear it, you carry with you</span>
+          <span class="MDIO-bold-italic">not just fashion.</span>
+        </div>
+        <div class="grid-item txt31 grid-text">
+          But the echoes of transformation, resilience, and the enduring beauty
+          of renewal.
+        </div>
+        <div class="grid-item txt32 grid-text-big-bold text-gradient">
+          <span class="MonaCustom1">Forge</span>
+          <span class="MonaCustom2">your</span>
+          <span class="MonaCustom3">next</span>
+          <span class="MonaCustom4">high</span>
+          <span class="MonaCustom5">fashion</span>
+          <span class="MonaCustom6">piece</span>
+          <span class="MonaCustom7">now ↙</span>
+        </div>
+        <div class="grid-item txt33 grid-text">
+          You feel the weight of the past lifting,
+          <span class="MDIO-ultra">replaced</span> by
+        </div>
+        <div class="grid-item txt34 grid-text skewX">
+          It honours the old, breathes life into the forgotten, and crafts
+        </div>
+        <div class="grid-item txt35 grid-text-big-bold">
+          <span class="skewX">something</span>
+          <span class="rotate">made just</span> for you
+        </div>
+        <div class="grid-item txt36 grid-text">
+          that is both a&nbsp;<em>continuation</em> and a new beginning
+        </div>
+        <div class="grid-item txt37 grid-text">
+          It is a gift of transformation, a celebration of who you are and who
+          you can be.
+        </div>
+        <div class="grid-item txt38 grid-text wavy-text">
+          It is a <span>s</span><span>t</span><span>o</span><span>r</span
+          ><span>y</span><br />o<span class="fraktur">f</span> change, o<span
+            class="fraktur"
+            >f</span
+          >
+          hope,<br />o<span class="fraktur">f</span> a world where we value what
+          we have and <span class="fraktur">f</span>ind beauty in what can be.
+        </div>
+        <div class="grid-item txt39 grid-text wavy-text">
+          It is a story of you, told through
+          <span class="fraktur">fabric and thread,</span> <u>woven</u> into the
+          very fabric of your life.
+        </div>
+        <div class="grid-item interface">
+          <img
+            src="assets/img/grid/interface.png"
+            alt="UI of the Fashion Forge"
+          />
+        </div>
+        <div id="model-container" class="grid-item"></div>
+        <div class="grid-item maschine">
+          <img
+            src="assets/img/grid/maschine.png"
+            alt="The Fashion Forge in Berlin"
+          />
+        </div>
+        <!-- <div class="grid-item grid-text txt40">
+          the Fashion Forge
+        </div>
+        <div class="grid-item grid-text txt41">
+          @The style smithy berlin
+        </div> -->
+      </div>
+    </div>
+    <script src="/src/prompt-overlay.ts"></script>
+    <script src="/src/restrictScroll.ts"></script>
+    <script type="module" src="/src/view-model.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,1130 @@
+/* MD IO */
+
+@font-face {
+    font-family: 'MD IO';
+    src: url(../assets/fonts/MD-IO/MDIO-Thin.woff) format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MD IO';
+    src: url(../assets/fonts/MD-IO/MDIO-Thin-Italic.woff) format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MD IO';
+    src: url(../assets/fonts/MD-IO/MDIO-Light.woff2) format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MD IO';
+    src: url(../assets/fonts/MD-IO/MDIO-Light-Italic.woff2) format('woff2');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MD IO';
+    src: url(../assets/fonts/MD-IO/MDIO-Regular.woff2) format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MD IO';
+    src: url(../assets/fonts/MD-IO/MDIO-Italic.woff2) format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MD IO';
+    src: url(../assets/fonts/MD-IO/MDIO-Medium.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MD IO';
+    src: url(../assets/fonts/MD-IO/MDIO-Medium-Italic.woff2) format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MD IO';
+    src: url(../assets/fonts/MD-IO/MDIO-Semibold.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MD IO';
+    src: url(../assets/fonts/MD-IO/MDIO-Semibold-Italic.woff2) format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MD IO';
+    src: url(../assets/fonts/MD-IO/MDIO-Bold.woff2) format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MD IO';
+    src: url(../assets/fonts/MD-IO/MDIO-Bold-Italic.woff2) format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MD IO';
+    src: url(../assets/fonts/MD-IO/MDIO-Black.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MD IO';
+    src: url(../assets/fonts/MD-IO/MDIO-Black-Italic.woff2) format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MD IO';
+    src: url(../assets/fonts/MD-IO/MDIO-Ultra.woff2) format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MD IO 800';
+    src: url(../assets/fonts/MD-IO/MDIO-Ultra.woff2) format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MD IO 800 italic';
+    src: url(../assets/fonts/MD-IO/MDIO-Ultra-Italic.woff2) format('woff2');
+    /* font-weight: 800; */
+    /* font-style: italic; */
+}
+
+
+/* MD Lorien */
+
+@font-face {
+    font-family: 'MD Lorien Book';
+    src: url(../assets/fonts/MD-Lórien/MDLórien-Book.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'MD Lorien Book Italic';
+    src: url(../assets/fonts/MD-Lórien/MDLórien-Book-Italic.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'MD Lorien Black';
+    src: url(../assets/fonts/MD-Lórien/MDLórien-Black.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'MD Lorien Black Italic';
+    src: url(../assets/fonts/MD-Lórien/MDLórien-Black-Italic.woff2) format('woff2');
+}
+
+
+/* Mona Sans */
+
+@font-face {
+    font-family: 'MonaSans';
+    src:
+        url(../assets/fonts/Mona-Sans.woff2) format('woff2 supports variations'),
+        url(../assets/fonts/Mona-Sans.woff2) format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+
+/* UnifrakturMaguntia */
+
+@font-face {
+    font-family: 'UnifrakturMaguntia';
+    src:
+        url(../assets/fonts/UnifrakturMaguntia\ Regular.woff2) format('woff2 supports variations'),
+        url(../assets/fonts/UnifrakturMaguntia\ Regular.woff2) format('woff2-variations');
+}
+
+
+/* Glass */
+
+@font-face {
+    font-family: 'Glass';
+    src:
+        url(../assets/fonts/Glass_TTY_VT220.woff) format('woff');
+}
+
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
+body,
+html {
+    margin: 0;
+    overflow-x: hidden;
+    /* background: #E1E1E1; */
+    background: linear-gradient(-12deg, #202020 32%, #E1E1E1 32%);
+    /* width: 100vw; */
+    /* background: linear-gradient(to bottom, #FFD0D7 0%, #EDE6FA 50%, #C4E3EF 100%); */
+}
+
+/* start animation */
+#animation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: backgroundFade 8s forwards ease-in-out;
+}
+
+.full-viewport-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    opacity: 75%;
+    animation: fadeOutImage 8s forwards ease-in-out;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.overlay-text {
+    font-family: 'MonaSans';
+    font-size: 10em;
+    font-weight: 900;
+    font-stretch: 125;
+    /* font-variation-settings: 'wght' 700, 'wdth' 125%; */
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    /* Center align the text */
+    color: #60FF8D;
+    mix-blend-mode: exclusion;
+    animation: blurAndFade 8.2s forwards ease-in-out;
+    z-index: 1;
+}
+
+/* .overlay-text p span {
+    transition: font-variation-settings 3s ease;
+    display: inline-block;
+} */
+
+/* .overlay-text span:hover {
+    font-variation-settings: 'wght' 200, 'wdth' 100%;
+} */
+
+@keyframes blurAndFade {
+    0% {
+        filter: blur(50px);
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    25% {
+        filter: blur(0);
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    40% {
+        filter: blur(0);
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        filter: blur(50px);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOutImage {
+    0% {
+        opacity: 0.75;
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+
+    25% {
+        opacity: 0.75;
+        transform: translate(-50%, -50%) scale(1);
+        filter: blur(2px);
+    }
+
+    40% {
+        opacity: 0.75;
+        transform: translate(-50%, -50%) scale(1);
+        filter: blur(2px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.05);
+        filter: blur(0);
+    }
+}
+
+@keyframes backgroundFade {
+    0% {
+        opacity: 1;
+        z-index: 1000;
+    }
+
+    40% {
+        opacity: 1;
+        z-index: 1000;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+/* after animation */
+.grid {
+    display: grid;
+    overflow-x: hidden;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    grid-template-rows: repeat(66, calc(100vw / 9 * 0.5));
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-item {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    animation: gridFadeIn 0.2s forwards ease-in;
+    z-index: 2;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.align-top {
+    object-position: top;
+}
+
+.align-bottom {
+    object-position: bottom;
+}
+
+.grid-text {
+    font-family: 'MD IO';
+    font-weight: 200;
+    font-size: 1rem;
+    color: #000000;
+    padding: 4px 8px 4px 8px;
+}
+
+.grid-text-bold {
+    color: #000000;
+    font-family: 'MD IO';
+    text-transform: uppercase;
+    font-weight: 460;
+    font-size: 1.3rem;
+    padding: 4px 6px 4px 6px;
+}
+
+.grid-text-big-bold {
+    color: #000000;
+    font-family: 'MonaSans';
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+}
+
+.grid-text-rotate {
+    /* position: absolute; */
+    color: #000000;
+    font-family: 'MD IO';
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 2.5rem;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    /* mix-blend-mode:overlay */
+}
+
+
+/* images */
+
+.item1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 6;
+    animation-delay: 6s;
+}
+
+.item2 {
+    grid-column: 3 / 6;
+    grid-row: 1 / 6;
+    animation-delay: 7.5s;
+}
+
+.item3 {
+    grid-column: 6 / 10;
+    grid-row: 1 / 10;
+    animation-delay: 6.5s;
+
+}
+
+.item4 {
+    grid-column: 1 / 4;
+    grid-row: 6 / 11;
+    animation-delay: 7s;
+}
+
+.item5 {
+    grid-column: 4 / 6;
+    grid-row: 6 / 11;
+}
+
+.item6 {
+    grid-column: 1 / 3;
+    grid-row: 11 / 14;
+}
+
+.item7 {
+    grid-column: 3 / 6;
+    grid-row: 11 / 14;
+}
+
+.item8 {
+    grid-column: 6 / 8;
+    grid-row: 10 / 13;
+}
+
+.item9 {
+    grid-column: 8 / 10;
+    grid-row: 10 / 15;
+}
+
+.item10 {
+    grid-column: 2 / 5;
+    grid-row: 14 / 18;
+}
+
+.item11 {
+    grid-column: 5 / 8;
+    grid-row: 14 / 17;
+}
+
+.item12 {
+    grid-column: 8 / 10;
+    grid-row: 16 / 19;
+}
+
+.item13 {
+    grid-column: 1 / 4;
+    grid-row: 19 / 22;
+}
+
+.item14 {
+    grid-column: 4 / 7;
+    grid-row: 18 / 20;
+}
+
+.item15 {
+    grid-column: 5 / 7;
+    grid-row: 20 / 22;
+}
+
+.item16 {
+    grid-column: 7 / 9;
+    grid-row: 19 / 23;
+}
+
+.item17 {
+    grid-column: 9 / 10;
+    grid-row: 22 / 24;
+}
+
+.item18 {
+    grid-column: 2 / 3;
+    grid-row: 22 / 25;
+}
+
+.item19 {
+    grid-column: 3 / 5;
+    grid-row: 22 / 25;
+}
+
+.item20 {
+    grid-column: 1 / 2;
+    grid-row: 25 / 27;
+}
+
+.item21 {
+    grid-column: 6 / 8;
+    grid-row: 25 / 27;
+}
+
+.item22 {
+    grid-column: 3 / 5;
+    grid-row: 27 / 30;
+}
+
+.item23 {
+    grid-column: 8 / 10;
+    grid-row: 27 / 30;
+}
+
+.item24 {
+    grid-column: 1 / 3;
+    grid-row: 30 / 32;
+}
+
+.item25 {
+    grid-column: 6 / 7;
+    grid-row: 30 / 33;
+}
+
+.item26 {
+    grid-column: 3 / 4;
+    grid-row: 33 / 35;
+}
+
+.item27 {
+    grid-column: 8 / 9;
+    grid-row: 38 / 39;
+}
+
+.interface {
+    grid-column: 2 / 9;
+    grid-row: 43 / 51;
+    object-fit: fill;
+    overflow: visible;
+}
+
+.maschine {
+    grid-column: 1 / 10;
+    grid-row: 53 / 62;
+}
+
+/* rectangles */
+
+.rectangle {
+    background-color: #60FF8D;
+    mix-blend-mode: color;
+}
+
+.rect1 {
+    grid-column: 7 / 8;
+    grid-row: 13 / 15;
+}
+
+.rect2 {
+    grid-column: 1 / 3;
+    grid-row: 17 / 19;
+}
+
+.rect3 {
+    grid-column: 8 / 10;
+    grid-row: 21 / 22;
+}
+
+.rect4 {
+    grid-column: 5 / 6;
+    grid-row: 25 / 26;
+}
+
+.rect5 {
+    grid-column: 2 / 3;
+    grid-row: 29 / 31;
+}
+
+.rect6 {
+    grid-column: 8 / 10;
+    grid-row: 33 / 34;
+}
+
+.rect7 {
+    grid-column: 4 / 5;
+    grid-row: 35 / 36;
+}
+
+.rect8 {
+    grid-column: 8 / 10;
+    grid-row: 34 / 35;
+}
+
+.rect9 {
+    grid-column: 2 / 4;
+    grid-row: 38 / 40;
+}
+
+.rect10 {
+    grid-column: 7 / 8;
+    grid-row: 40 / 41;
+}
+
+
+/* text items */
+
+.MDIO-ultra-italic {
+    font-family: 'MD IO';
+    font-style: italic;
+    font-weight: 800;
+}
+
+.MDIO-ultra {
+    font-family: 'MD IO';
+    font-weight: 700;
+}
+
+.MDIO-bold-italic {
+    font-family: 'MD IO';
+    font-style: italic;
+    font-weight: 600;
+}
+
+.MDIO-thin {
+    font-weight: 100;
+}
+
+.MDLorien-book-italic {
+    font-family: 'MD Lorien Book Italic';
+}
+
+.fraktur {
+    font-family: 'UnifrakturMaguntia';
+}
+
+.MonaSans-Regular-Narrow {
+    font-family: 'MonaSans';
+    font-weight: 300;
+    font-stretch: 75%;
+}
+
+.MonaSans-Light {
+    font-family: 'MonaSans';
+    font-weight: 200;
+}
+
+.skewX {
+    display: block;
+    transform: skewX(30deg);
+}
+
+.skewY {
+    display: block;
+    transform: skewY(-8deg);
+}
+
+.rotate {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+.wavy-text span {
+    display: inline-block;
+}
+
+.wavy-text span:nth-child(odd) {
+    transform: translateY(-1.5px);
+}
+
+.wavy-text span:nth-child(even) {
+    transform: translateY(1px);
+}
+
+.makerBlack {
+    background-color: #000;
+    padding: 1px 6px 2px 6px;
+    border-radius: 0px;
+    mix-blend-mode: color;
+    color: #9CFFB4;
+}
+
+.makerWhite {
+    background-color: #fff;
+    padding: 1px 6px 2px 6px;
+    border-radius: 0px;
+    mix-blend-mode: color;
+    color: #000;
+}
+
+.text-gradient {
+    background: linear-gradient(to bottom, white, #9CFFB4);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.green {
+    color: #9CFFB4;
+    /* text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); */
+}
+
+.white {
+    color: #fff;
+}
+
+.txt1 {
+    grid-column: 6 / 8;
+    grid-row: 13 / 14;
+    text-align: right;
+    color: #000000;
+    font-family: 'MD IO';
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    align-content: center;
+}
+
+.txt2 {
+    grid-column: 8 / 9;
+    grid-row: 15 / 16;
+    align-content: center;
+}
+
+.txt3 {
+    grid-column: 1 / 2;
+    grid-row: 14 / 18;
+    padding: 0px 8px 0px 0px;
+    font-family: 'MD Lorien Book';
+    line-height: 2.7rem;
+    align-content: center;
+}
+
+.txt4 {
+    grid-column: 2 / 4;
+    grid-row: 18 / 19;
+    align-content: center;
+    font-style: italic;
+}
+
+.txt5 {
+    grid-column: 6 / 8;
+    grid-row: 17 / 18;
+    align-content: center;
+    font-family: 'MD Lorien Book';
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.txt6 {
+    grid-column: 9 / 10;
+    grid-row: 19 / 22;
+    padding: 0px 8px 0px 0px;
+    text-align: right;
+}
+
+.txt7 {
+    grid-column: 1 / 2;
+    grid-row: 22 / 25;
+    padding: 0px 0px 0px 8px;
+    font-family: 'MD Lorien Book Italic';
+    font-size: 1.2rem;
+}
+
+.txt8 {
+    grid-column: 5 / 6;
+    grid-row: 22 / 24;
+    text-align: right;
+    text-transform: uppercase;
+    line-height: 68%;
+    font-family: 'MD IO 800 italic';
+}
+
+.txt9 {
+    grid-column: 5 / 7;
+    grid-row: 24 / 25;
+    align-content: end;
+    font-family: 'MD Lorien Book';
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.txt10 {
+    grid-column: 7 / 8;
+    grid-row: 23 / 24;
+    text-align: right;
+}
+
+.txt11 {
+    grid-column: 8 / 11;
+    grid-row: 24 / 27;
+    padding: 0px 0px 0px 10px;
+    text-align: right;
+    align-content: end;
+}
+
+.txt12 {
+    grid-column: 2 / 4;
+    grid-row: 25 / 27;
+    text-align: right;
+    align-content: end;
+    line-height: 320%;
+}
+
+.txt13 {
+    grid-column: 4 / 6;
+    grid-row: 25 / 26;
+}
+
+.txt14 {
+    grid-column: 1 / 3;
+    grid-row: 27 / 30;
+    padding: 0px 0px 0px 8px;
+    align-content: end;
+}
+
+.txt15 {
+    grid-column: 5 / 6;
+    grid-row: 26 / 33;
+    align-content: center;
+}
+
+.txt16 {
+    grid-column: 6 / 8;
+    grid-row: 27 / 28;
+    text-align: center;
+    font-style: italic;
+}
+
+.txt17 {
+    grid-column: 7 / 8;
+    grid-row: 28 / 30;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 75%;
+    align-content: end;
+}
+
+.txt18 {
+    grid-column: 3 / 5;
+    grid-row: 30 / 31;
+    font-family: 'MD Lorien Book';
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.txt19 {
+    grid-column: 8 / 10;
+    grid-row: 30 / 31;
+    font-family: 'MonaSans';
+    font-weight: 600;
+    font-stretch: 125%;
+}
+
+.txt20 {
+    grid-column: 1 / 4;
+    grid-row: 32 / 33;
+    padding: 0px 0px 0px 8px;
+}
+
+.txt21 {
+    grid-column: 7 / 9;
+    grid-row: 31 / 33;
+    text-align: right;
+    line-height: 50%;
+    align-items: end;
+}
+
+.txt22 {
+    grid-column: 9 / 10;
+    grid-row: 32 / 35;
+    text-transform: uppercase;
+    line-height: 68%;
+    font-family: 'MD IO 800 italic';
+}
+
+.txt23 {
+    grid-column: 1 / 3;
+    grid-row: 33 / 35;
+    padding: 0px 0px 0px 8px;
+    text-align: center;
+    font-family: 'MonaSans';
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.txt24 {
+    grid-column: 4 / 6;
+    grid-row: 33 / 34;
+    text-align: right;
+    line-height: 310%;
+    /* transform: scaleY(23); */
+    align-content: center;
+    transform: scaleY(10);
+    align-content: center;
+    line-height: 100%;
+}
+
+.txt25 {
+    grid-column: 5 / 7;
+    grid-row: 34 / 35;
+    text-align: right;
+    font-family: 'MonaSans';
+    font-weight: 500;
+    font-stretch: 125%;
+    line-height: 120%;
+}
+
+.txt26 {
+    grid-column: 7 / 8;
+    grid-row: 34 / 38;
+    text-align: center;
+    font-family: 'MD Lorien Black Italic';
+    font-size: 1.3rem;
+    line-height: 190%;
+    text-transform: uppercase;
+}
+
+.txt27 {
+    grid-column: 8 / 10;
+    grid-row: 35 / 37;
+    text-align: right;
+}
+
+.txt28 {
+    grid-column: 1 / 2;
+    grid-row: 36 / 38;
+    padding: 0px 0px 0px 8px;
+    text-align: right;
+}
+
+.txt29 {
+    grid-column: 2 / 4;
+    grid-row: 34 / 37;
+    align-content: end;
+    color: #000000;
+    font-family: 'MD Lorien Book';
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 2rem;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.txt30 {
+    grid-column: 4 / 6;
+    grid-row: 36 / 37;
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+.txt31 {
+    grid-column: 5 / 7;
+    grid-row: 37 / 39;
+    /* transform: rotate(-25deg); */
+    font-size: 2.2rem;
+    align-items: end;
+    font-family: 'MonaSans';
+    font-weight: 100;
+    text-align: center;
+    line-height: 90%;
+    letter-spacing: -4px;
+}
+
+.MonaCustom1 {
+    font-family: 'MonaSans';
+    font-weight: 200;
+    font-stretch: 89%;
+}
+
+.MonaCustom2 {
+    font-family: 'MonaSans';
+    font-weight: 300;
+    font-stretch: 100%;
+}
+
+.MonaCustom3 {
+    font-family: 'MonaSans';
+    font-weight: 400;
+    font-stretch: 111%;
+}
+
+.MonaCustom4 {
+    font-family: 'MonaSans';
+    font-weight: 500;
+    font-stretch: 125%;
+}
+
+.MonaCustom5 {
+    font-family: 'MonaSans';
+    font-weight: 650;
+    font-stretch: 75%;
+}
+
+.MonaCustom6 {
+    font-family: 'MonaSans';
+    font-weight: 780;
+    font-stretch: 94%;
+}
+
+.MonaCustom7 {
+    font-family: 'MonaSans';
+    font-weight: 900;
+    font-stretch: 118%;
+}
+
+.txt32 {
+    grid-column: 9 / 10;
+    grid-row: 37 / 42;
+    line-height: 70%;
+    align-content: end;
+    font-size: 3.3rem;
+}
+
+.txt33 {
+    grid-column: 2 / 3;
+    grid-row: 38 / 40;
+    font-family: 'MonaSans';
+    font-weight: 200;
+    font-stretch: 75%;
+    text-align: justify;
+    hyphens: auto;
+    font-size: 1.6rem;
+    line-height: 97%;
+}
+
+.txt34 {
+    grid-column: 3 / 5;
+    grid-row: 38 / 39;
+    text-align: right;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+
+.txt35 {
+    grid-column: 3 / 5;
+    grid-row: 39 / 41;
+    font-family: 'MD IO 800 italic';
+    line-height: 62%;
+    font-size: 3.5rem;
+}
+
+
+
+.txt36 {
+    grid-column: 4 / 6;
+    grid-row: 40 / 42;
+    font-family: 'MD Lorien Book';
+    font-size: 2rem;
+    text-align: right;
+}
+
+.txt37 {
+    grid-column: 8 / 9;
+    grid-row: 39 / 41;
+    text-align: justify;
+    hyphens: auto;
+    transform: rotate(90deg);
+    font-size: 1.1rem;
+}
+
+.txt38 {
+    grid-column: 1 / 3;
+    grid-row: 41 / 42;
+    font-size: 1.9rem;
+    padding: 0px 0px 0px 8px;
+    text-align: center;
+    font-family: 'MonaSans';
+    font-weight: 450;
+    line-height: 158%;
+    font-stretch: 125%;
+}
+
+.txt39 {
+    grid-column: 6 / 8;
+    grid-row: 41 / 43;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.txt40 {
+    grid-column: 2 / 3;
+    grid-row: 53 / 54;
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+    font-family: 'MD IO 800';
+    font-weight: 800;
+    text-transform: uppercase;  
+}
+
+.txt41 {
+    grid-column: 8 / 10;
+    grid-row: 61 / 62;
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    font-family: 'MD IO 800';
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.three-d-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow:
+      1px 1px 0px #000,
+      2px 2px 0px #000;
+      /* 3px 3px 0px #fff,
+      4px 4px 0px #000,
+      5px 5px 0px #000; */
+  }
+
+#model-container {
+    grid-column: 3 / 8;
+    grid-row: 41 / 54;
+    /* background: transparent; */
+    overflow: visible;
+}
+
+/* @keyframes gridFadeIn {
+    to {
+        opacity: 1;
+    }
+} */

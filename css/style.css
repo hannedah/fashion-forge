@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'HubotSans';
+    src:
+        url(../assets/fonts/Hubot-Sans.woff2) format('woff2 supports variations'),
+        url(../assets/fonts/Hubot-Sans.woff2) format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+  
+  @font-face {
+    font-family: 'MonaSans';
+    src:
+        url(../assets/fonts/Mona-Sans.woff2) format('woff2 supports variations'),
+        url(../assets/fonts/Mona-Sans.woff2) format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MonaSans'
+  }
+  
+  
+  body {
+    margin: 0;
+    font-family: 'MonaSans';
+    font-weight: 400;
+    background-color: #212121;
+  }
+  
+  header {
+    margin-top: 3em;
+    text-align: center;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    font-weight: 900;
+  }
+  
+  .background-text {
+    font-family: 'MonaSans';
+    font-weight: 800;
+    font-stretch: 125%;
+    font-size: 9em; /* Sets the text size */
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(to right, blue, rgb(252, 168, 231), red);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: background-text-animation 5s infinite linear;
+    /* animation: background-text-glow 5s infinite linear; */
+    position: relative;
+    z-index: 0;
+  }
+  
+  @keyframes background-text-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .variable-text {
+    font-family: 'MonaSans';
+    font-weight: 800;
+    font-stretch: 125%;
+    font-size: 9em; /* Sets the text size */
+    text-align: left;
+    width: 100%;
+    background-color: rgb(255, 231, 232);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 0;
+  }
+
+section {
+    padding: 60px 20px;
+    margin-top: 0px;
+}
+
+section:nth-child(even) {
+    background-color: #a7c3cd;
+}
+
+section:nth-child(odd) {
+    background-color: #46161c;
+}
+
+
+#section1 {
+    min-height: calc(100vh);
+    position: relative; /* Ensure the section can contain absolutely positioned elements */
+    display: flex;
+    align-items: center;
+}
+
+.section1-img {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure it appears above other content */
+    width: 50%; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    align-items: flex-end; /* Align the content to the bottom */
+    user-select: none; /* Make the image non-selectable */
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For Internet Explorer and Edge */
+}
+
+
+.model-container {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 20; /* Ensure it appears above other content, including the image */
+}
+
+/* Position each model container uniquely */
+#model-container1 { top: 40%; left: 7%; transform: translateX(-50%); }
+#model-container2 { top: -10%; left: 88%; transform: translateX(-50%); }
+#model-container3 { top: -12%; left: 40%; transform: translateX(-50%); }
+#model-container4 { top: 60%; left: 85%; transform: translateX(-50%); }
+#model-container5 { top: 65%; left: 20%; transform: translateX(-50%); }
+#model-container6 { top: 12%; left: 75%; transform: translateX(-50%); }
+#model-container7 { top: -4%; left: 15%; transform: translateX(-50%); }
+#model-container8 { top: 32%; left: 92%; transform: translateX(-50%); }
+#model-container9 { top: 26%; left: 27%; transform: translateX(-50%); }

@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'HubotSans';
+    src:
+        url(../assets/fonts/Hubot-Sans.woff2) format('woff2 supports variations'),
+        url(../assets/fonts/Hubot-Sans.woff2) format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+@font-face {
+    font-family: 'MonaSans';
+    src:
+        url(../assets/fonts/Mona-Sans.woff2) format('woff2 supports variations'),
+        url(../assets/fonts/Mona-Sans.woff2) format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+@font-face {
+    font-family: 'MonaspaceArgon';
+    src:
+        url(../assets/fonts/MonaspaceArgonVarVF[wght,wdth,slnt].woff2) format('woff2 supports variations'),
+        url(../assets/fonts/MonaspaceArgonVarVF[wght,wdth,slnt].woff2) format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+@font-face {
+    font-family: 'UnifrakturMaguntia';
+    src:
+        url(../assets/fonts/UnifrakturMaguntia\ Regular.woff2) format('woff2 supports variations'),
+        url(../assets/fonts/UnifrakturMaguntia\ Regular.woff2) format('woff2-variations');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MonaSans'
+}
+
+body {
+    margin: 0;
+    font-family: 'MonaSans';
+    font-weight: 400;
+    background-color: #1e1e1e;
+    overflow: hidden;
+}
+
+.full-viewport-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    opacity: 75%;
+    animation: fadeOutImage 8s forwards ease-in-out;
+}
+
+.overlay-text {
+    font-family: 'MonaspaceArgon';
+    font-size: 4em;
+    font-variation-settings: 'wght' 700, 'wdth' 125%;
+    /* font-weight: bold; */
+    /* font-stretch: 125%; */
+    line-height: 0.65em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    color: #6FE28F;
+    mix-blend-mode: exclusion;
+    filter: blur(10px);
+    animation: blurAndFade 8.2s forwards ease-in-out;
+    z-index: 1;
+}
+
+.overlay-text span {
+    transition: font-variation-settings 0.1s ease;
+}
+
+.overlay-text span:hover {
+    font-variation-settings: 'wght' 200, 'wdth' 100%;
+}
+
+
+@keyframes blurAndFade {
+    0% {
+        filter: blur(20px);
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    25% {
+        filter: blur(0);
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    40% {
+        filter: blur(0);
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        filter: blur(10px);
+        opacity: 0;
+    }
+}
+
+
+@keyframes fadeOutImage {
+    0% {
+        opacity: 0.75;
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+
+    25% {
+        opacity: 0.75;
+        transform: translate(-50%, -50%) scale(1);
+        filter: blur(2px);
+    }
+
+    40% {
+        opacity: 0.75;
+        transform: translate(-50%, -50%) scale(1);
+        filter: blur(2px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.05);
+        filter: blur(0);
+    }
+}
+
+
+/* ab hier nach der Start Animation */
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.column {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+}
+
+.item {
+    font-family: 'UnifrakturMaguntia';
+    font-size: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards ease-in-out;
+    color: #F0B5C7;
+}
+
+.item11 {
+    animation-delay: 9.6s;
+}
+
+.item12 {
+    animation-delay: 8.4s;
+}
+
+.item21 {
+    animation-delay: 8.8s;
+}
+
+.item22 {
+    animation-delay: 9s;
+}
+
+.item31 {
+    animation-delay: 9.4s;
+}
+
+.item32 {
+    animation-delay: 8s;
+}
+
+.item41 {
+    animation-delay: 9.8s;
+}
+
+.item42 {
+    animation-delay: 8.6s;
+}
+
+.item51 {
+    animation-delay: 8.2s;
+}
+
+.item52 {
+    animation-delay: 9.2s;
+}
+
+.item53 {
+    animation-delay: 10s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+}
