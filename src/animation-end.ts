@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    addEventListener('animationend', event => {
+    addEventListener('animationend', () => {
         let images = document.getElementsByClassName('full-viewport-image');
         let texts = document.getElementsByClassName('overlay-text');
         if (images.length == 0 || texts.length == 0) {
