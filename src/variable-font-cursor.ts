@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     for (let p of pTags) {
       const textContent = p.textContent || "";
       p.innerHTML = ""; // Clear the original text content
-      console.log(textContent);
+      // console.log(textContent);
 
       // Wrap each character in a span
       for (let char of textContent) {

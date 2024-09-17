@@ -211,9 +211,9 @@ for (let prompt of prompts) {
       const regex = /image(\d+).png/; // Apply the regex to the URL
       const match = img.src.match(regex); // Check if there's a match and extract the captured group
       const index = match[1];
-      console.log(index);
+      // console.log(index);
       let info = imgMap.get(index);
-      console.log(info);
+      // console.log(info);
 
       let overlay = document.createElement("div");
       // overlay.innerHTML = info.text;

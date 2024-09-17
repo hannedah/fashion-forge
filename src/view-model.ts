@@ -54,7 +54,7 @@ container.addEventListener('mousedown', (event) => {
   isMouseDown = true;
   mouseX = event.clientX;
   mouseY = event.clientY;
-  console.log('Mouse down at:', mouseX, mouseY);
+  // console.log('Mouse down at:', mouseX, mouseY);
 });
 
 container.addEventListener('mousemove', (event) => {
@@ -67,16 +67,16 @@ container.addEventListener('mousemove', (event) => {
     model.rotation.y += deltaX * 0.01;
     model.rotation.x += deltaY * 0.01;
 
-    console.log('Rotating model:', deltaX, deltaY);
+    // console.log('Rotating model:', deltaX, deltaY);
   }
 });
 
 container.addEventListener('mouseup', () => {
   isMouseDown = false;
-  console.log('Mouse up');
+  // console.log('Mouse up');
 });
 
 container.addEventListener('mouseleave', () => {
   isMouseDown = false;
-  console.log('Mouse left the container');
+  // console.log('Mouse left the container');
 });
