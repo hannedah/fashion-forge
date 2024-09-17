@@ -124,22 +124,22 @@
 
 @font-face {
     font-family: 'MD Lorien Book';
-    src: url(../assets/fonts/MD-Lórien/MDLórien-Book.woff2) format('woff2');
+    src: url(../assets/fonts/MD-Lorien/MDLorien-Book.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'MD Lorien Book Italic';
-    src: url(../assets/fonts/MD-Lórien/MDLórien-Book-Italic.woff2) format('woff2');
+    src: url(../assets/fonts/MD-Lorien/MDLorien-Book-Italic.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'MD Lorien Black';
-    src: url(../assets/fonts/MD-Lórien/MDLórien-Black.woff2) format('woff2');
+    src: url(../assets/fonts/MD-Lorien/MDLorien-Black.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'MD Lorien Black Italic';
-    src: url(../assets/fonts/MD-Lórien/MDLórien-Black-Italic.woff2) format('woff2');
+    src: url(../assets/fonts/MD-Lorien/MDLorien-Black-Italic.woff2) format('woff2');
 }
 
 
